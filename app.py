@@ -55,6 +55,10 @@ def eliminar_producto(id):
         session['carrito'] = carrito
     return redirect(url_for('ver_carrito'))
 
+@app.route('/gracias')
+def gracias():
+    return render_template('gracias.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
